@@ -1,0 +1,25 @@
+{
+  "name": "electron-auto-update-example",
+  "version": "1.0.0",
+  "description": "Example for auto-updates",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder build --win --publish never",
+    "deploy": "electron-builder build --win --publish always"
+  },
+  "author": "Nestor Peralta",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^8.0.1",
+    "electron-builder": "^22.3.2"
+  },
+  "dependencies": {
+    "electron-updater": "^4.2.2"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/nperalta-tw/electron-auto-update-example.git"
+  }
+}
